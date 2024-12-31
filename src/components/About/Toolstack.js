@@ -1,7 +1,7 @@
 // Toolstack.js
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import './Toolstack.css';
+
 
 // Importing tools logos
 import vscode from '../../Assets/Tool/visual-studio-code-icon.png';
@@ -13,29 +13,23 @@ import blackbox from '../../Assets/Tool/blackbox-ai-logo.png';
 
 function Toolstack() {
   return (
-    <div className="techstack-container" >
-
-    <Row className="tech-icons-row">
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="VS Code" src={vscode} className="tech-icon-img" />
-      </Col>
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="VS" src={vs} className="tech-icon-img" />
-      </Col>
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="Postman" src={postman} className="tech-icon-img" />
-      </Col>
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="Github" src={Github} className="tech-icon-img" />
-      </Col>
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="Github" src={chatgpt} className="tech-icon-img" />
-      </Col>
-      <Col xs={6} md={2} className="tech-icon">
-        <img alt="Github" src={blackbox} className="tech-icon-img" />
-      </Col>
-    </Row>
-    </div>
+   
+     <div className="techstack-container">
+     <div className="tech-icons-row">
+       {[
+         { src: vscode, label: "VSCode" },
+         { src: vs, label: "vsstudio" },
+         { src: postman, label: "postman" },
+         { src: Github, label: "github" },
+         { src: chatgpt, label: "chatgpt" },
+         { src: blackbox, label: "blackbox" },
+       ].map((tech, index) => (
+         <div key={index} className="tech-icon">
+           <img alt={tech.label} src={tech.src} className="tech-icon-img" />
+         </div>
+       ))}
+     </div>
+   </div>
   );
 }
 
