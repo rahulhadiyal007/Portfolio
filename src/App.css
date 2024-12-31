@@ -1,0 +1,25 @@
+/* General App Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+  
+}
+
+#no-scroll {
+  overflow: hidden;
+}
+
+#scroll {
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #58a6ff;
+}

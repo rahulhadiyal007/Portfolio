@@ -1,0 +1,165 @@
+/* Container to center the toolstack section */
+.techstack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px; /* Added padding for better spacing */
+    border-radius: 10px; /* Rounded container edges */
+  }
+  
+  /* Row containing the tool stack icons */
+  .tech-icons-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ensuring minimum size for each icon */
+    gap: 30px; /* Increased gap for better spacing */
+    max-width: 1200px;
+    padding: 20px;
+    justify-items: center;
+    width: 100%;
+  }
+  
+  /* Styling each icon block */
+  .tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Fixed width for all devices */
+    height: 120px; /* Fixed height for all devices */
+    padding: 10px;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Softer edges */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    position: relative; /* For hover effect */
+    overflow: hidden;
+  }
+  
+  /* Add dynamic gradient on hover */
+  .tech-icon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1));
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+  }
+  
+  /* Icon size */
+  .tech-icon-img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Label styling under each icon */
+  .tech-icon-label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Hover effects */
+  .tech-icon:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight 3D effect */
+    background: linear-gradient(135deg, #6f42c1, #5a3e9d);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tech-icon:hover::before {
+    transform: scale(1); /* Activate gradient effect */
+  }
+  
+  .tech-icon:hover .tech-icon-img {
+    transform: scale(1.2);
+  }
+  
+  .tech-icon:hover .tech-icon-label {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Smooth transition for hover state */
+  .tech-icon img {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Subtle animation for icons */
+  .tech-icon {
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .tech-icons-row {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjusted size */
+      gap: 20px; /* Reduce gap for smaller screens */
+    }
+  
+    .tech-icon-img {
+      max-width: 40px; /* Smaller icons for small screens */
+      max-height: 40px;
+    }
+  
+    .tech-icon-label {
+      font-size: 0.8rem; /* Smaller font size for labels */
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .tech-icons-row {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Moderate size */
+      gap: 25px; /* Moderate gap */
+    }
+  
+    .tech-icon-img {
+      max-width: 50px; /* Slightly larger icons */
+      max-height: 50px;
+    }
+  
+    .tech-icon-label {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .tech-icons-row {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Normal size */
+      gap: 30px; /* Normal gap */
+    }
+  
+    .tech-icon-img {
+      max-width: 60px; /* Default icon size */
+      max-height: 60px;
+    }
+  
+    .tech-icon-label {
+      font-size: 1rem; /* Normal label size */
+    }
+  }

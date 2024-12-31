@@ -1,0 +1,100 @@
+/* General Card Styling */
+.about-card {
+  background-color: #f4f7ff;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Blockquote Styling */
+.about-quote {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+
+.about-quote p {
+  margin-bottom: 20px;
+}
+
+/* Highlight Text with Color Animation */
+.highlight {
+  font-weight: 600;
+  animation: colorChange 3s linear infinite; /* Continuous color animation */
+}
+
+@keyframes colorChange {
+  0% {
+    color: #6a1b9a;
+  }
+  25% {
+    color: #8e24aa;
+  }
+  50% {
+    color: #007bff;
+  }
+  75% {
+    color: plum;
+  }
+  100% {
+    color: #6a1b9a;
+  }
+}
+
+/* Activity List Styling */
+.activity-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.activity-item {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.activity-item:hover {
+  color: #6a1b9a;
+  transform: translateX(5px);
+}
+
+.activity-item .activity-icon {
+  font-size: 1.4em;
+  margin-right: 10px;
+  color: #6a1b9a;
+  transition: color 0.3s ease;
+}
+
+.activity-item:hover .activity-icon {
+  color: #8e24aa;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-quote {
+    font-size: 1em;
+  }
+
+  .activity-item {
+    font-size: 1em;
+  }
+
+  .activity-item .activity-icon {
+    font-size: 1.2em;
+  }
+}

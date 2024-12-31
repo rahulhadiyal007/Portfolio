@@ -1,0 +1,145 @@
+/* Resume.css */
+
+/* Main Section */
+.resume-section {
+  background: linear-gradient(135deg, #D1C6FF, #C1B3FF);
+  padding: 50px 20px; /* Added padding for better mobile view */
+  color: #ffffff;
+  min-height: 100vh; /* Ensure the section takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text for better alignment */
+  transition: background 0.3s ease-in-out; /* Smooth transition for background */
+}
+
+.resume-section:hover {
+  background: linear-gradient(135deg, #C1B3FF, #D1C6FF); /* Subtle background change on hover */
+}
+
+/* Content Block */
+.resume-content {
+  margin: 20px 0;
+  max-width: 1000px;
+  width: 100%; /* Ensure content doesn't overflow */
+}
+
+/* Title */
+.resume-title {
+  font-size: 3rem; /* Increased size for better visibility */
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Larger shadow for impact */
+  letter-spacing: 2px; /* Letter spacing for improved readability */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  transform: translateY(0); /* Initial position */
+}
+
+.resume-title:hover {
+  color: #f0e68c; /* Change color on hover for emphasis */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.resume-title:focus {
+  outline: none;
+  color: #f0e68c; /* Highlight color on focus for accessibility */
+}
+
+/* Description */
+.resume-description {
+  font-size: 1.25rem; /* Adjusted for better readability */
+  margin-bottom: 30px;
+  line-height: 1.8; /* Better line height for clarity */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 0 15px; /* Padding for smaller screens */
+  font-family: 'Arial', sans-serif; /* More readable font for content */
+  text-align: justify; /* Improved text alignment */
+}
+
+.resume-description p {
+  margin-bottom: 15px; /* Increased space between paragraphs */
+}
+
+.resume-description a {
+  color: #6a1b9a; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.resume-description a:hover {
+  color: #f0e68c; /* Hover color for links */
+}
+
+/* Button */
+.download-btn {
+  background-color: #6a1b9a; /* Primary button color */
+  color: #ffffff; /* Button text color */
+  max-width: 250px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove underline from link */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  outline: none; /* Remove focus outline */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.download-btn i {
+  margin-right: 8px; /* Add spacing between the icon and text */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .resume-title {
+    font-size: 2.5rem; /* Adjust title size for medium screens */
+  }
+
+  .resume-description {
+    font-size: 1.125rem; /* Adjust description size for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-title {
+    font-size: 2rem; /* Adjust title size for smaller screens */
+  }
+
+  .resume-description {
+    font-size: 1rem; /* Adjust description size for readability */
+  }
+
+  .download-btn {
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+    padding: 10px 15px; /* Adjust button padding */
+  }
+}
+
+/* For extra small devices (mobile) */
+@media (max-width: 480px) {
+  .resume-title {
+    font-size: 1.75rem; /* Further reduced title size */
+  }
+
+  .resume-description {
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+  }
+
+  .download-btn {
+    font-size: 0.9rem; /* Button text size for mobile */
+    padding: 8px 12px; /* Button padding for mobile */
+  }
+}

@@ -1,0 +1,73 @@
+/* General Footer Styles */
+.footer {
+    background-color: #5E686D; /* Darker background for a sleek look */
+    color: white; /* White text color */
+    padding: 40px 0; /* Added more vertical padding for spacious design */
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    border-top: 2px solid #8D77AB; /* Add a subtle top border with color */
+    
+  }
+  
+  .footer-copywright {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-copywright h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .footer-body {
+    text-align: center;
+  }
+  
+  .footer-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .footer-icons {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex;
+    justify-content: center; /* Center the social icons */
+    gap: 20px; /* Space out the icons evenly */
+  }
+  
+  .social-icons {
+    display: inline-block;
+  }
+  
+  .icon-colour {
+    color: white; /* Default color for icons */
+    font-size: 2rem; /* Larger icons for better visibility */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .icon-colour:hover {
+    color: #6f42c1; /* Purple color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  @media (max-width: 767px) {
+    .footer-copywright h3 {
+      font-size: 1rem; /* Adjust font size for small screens */
+    }
+  
+    .footer-body h3 {
+      font-size: 1rem; /* Adjust font size for small screens */
+    }
+  
+    .footer-icons {
+      flex-wrap: wrap; /* Wrap icons on smaller screens */
+      justify-content: center;
+    }
+  
+    .social-icons {
+      margin-bottom: 10px; /* Add margin below each icon for mobile */
+    }
+  }
+  
+  
