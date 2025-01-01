@@ -27,10 +27,10 @@ function Projects() {
                 can browse and purchase a wide range of books online.
               </p>
               <div className="project-buttons">
-                <a href="https://github.com/your-repo/bookstore" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://github.com/rahulhadiyal007/Bookstore.git" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://demo-link.com/bookstore" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                <a href="https://bookstore-20ml.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-success">
                   <i className="fas fa-external-link-alt"></i> Demo
                 </a>
               </div>
@@ -47,10 +47,10 @@ function Projects() {
                 ReactJS.
               </p>
               <div className="project-buttons">
-                <a href="https://github.com/your-repo/contact-manager" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://github.com/rahulhadiyal007/Contact_manager.git" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://demo-link.com/contact-manager" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                <a href="https://contact-manager-v889.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-success">
                   <i className="fas fa-external-link-alt"></i> Demo
                 </a>
               </div>
@@ -67,10 +67,10 @@ function Projects() {
                 and JavaScript.
               </p>
               <div className="project-buttons">
-                <a href="https://github.com/your-repo/crud-app" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://github.com/rahulhadiyal007/CRUD-APPLICATION.git" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://demo-link.com/crud-app" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                <a href="file:///C:/Users/Rahul/Project/CRUD%20APPLICATION/index.html" target="_blank" rel="noopener noreferrer" className="btn btn-success">
                   <i className="fas fa-external-link-alt"></i> Demo
                 </a>
               </div>
@@ -87,10 +87,10 @@ function Projects() {
                 with real-time updates and highlights the winner or a tie.
               </p>
               <div className="project-buttons">
-                <a href="https://github.com/your-repo/tic-tac-toe" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://github.com/rahulhadiyal007/Tic-tac-toe.git" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://demo-link.com/tic-tac-toe" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                <a href="https://rahulhadiyal007.github.io/Tic-tac-toe/" target="_blank" rel="noopener noreferrer" className="btn btn-success">
                   <i className="fas fa-external-link-alt"></i> Demo
                 </a>
               </div>
