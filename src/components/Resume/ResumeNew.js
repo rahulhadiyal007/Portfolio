@@ -3,8 +3,7 @@ import { Container, Row } from "react-bootstrap";
 
 import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome CSS
 import './Resume.css';
-import pdf from '../../Assets/ecvRahulHadiyalResume.pdf'
-
+import pdf from '../../Assets/Rahul_resume2025.pdf'
 
 function ResumeNew() {
   return (
